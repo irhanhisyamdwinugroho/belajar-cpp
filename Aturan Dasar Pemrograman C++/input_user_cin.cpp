@@ -3,10 +3,19 @@
 using namespace std;
 
 int main() {
-    int harga;
+    string nama;
+    int umur;
 
-    cout << "masukan harga buku: ";
-    cin >> harga;
-    cout << "harga buku c++ adalah : "<<harga << endl;
+    cout <<"masukkan nama: ";
+    getline(cin,nama); //ini adalah function untuk menuliskan nama tanpa spasi
+
+    cout << "masukan umur : ";
+    cin >> umur;
+
+    cout << '\n';
+
+    cout << "selamat belajar c ++ "<<'\t' << nama << ", semangat!!"<< endl;
+    cout << "Usia anda saat ini" << umur << "tahun"  << endl;
+
     return 0;
 }

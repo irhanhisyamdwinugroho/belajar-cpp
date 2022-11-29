@@ -7,4 +7,7 @@ int main() {
     double ipk;
     char kelas;
     string kegiatan;
+
+    kegiatan = "ini adalah seseuatu hal yang susah kawan"; cout <<"\n";
+    cout << kegiatan;
 }

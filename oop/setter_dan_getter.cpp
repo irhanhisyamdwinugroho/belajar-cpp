@@ -20,6 +20,8 @@ public:
         tahun_pembuatan = var3;
     }
 
+    
+
     string getpemilik(){
         return pemilik;
     }
@@ -29,11 +31,20 @@ public:
     int gettahun_pembuatan(){
         return tahun_pembuatan;
     }
-    
+
+};
+
+class lenovo: public laptop{
+    public:
+lenovo(){
+        cout<<"ini adalah constructor lenovo"<<endl;;
+    }
+
 };
 
 int main(){
     laptop laptopIrhan;
+    lenovo laptopAndi;
     cout<<"## PROGRAM MENAMPILKAN CLASS##\n\n" <<endl;
 
     laptopIrhan.setpemilik ("Irhan Hisyam");
@@ -43,5 +54,17 @@ int main(){
     cout<<laptopIrhan.getpemilik()<<endl;
     cout<<laptopIrhan.getjenis_laptop()<<endl;
     cout<<laptopIrhan.gettahun_pembuatan()<<endl;
+
+
+cout<<"## PROGRAM MENAMPILKAN inheritence##\n\n" <<endl;
+    laptopAndi.setpemilik ("andi prasetyo");
+    laptopAndi.setjenis_laptop ("lenovo tenan");
+    laptopAndi.settahun_pembuatan (2015);
+    cout<<laptopAndi.getpemilik()<<endl;
+    cout<<laptopAndi.getjenis_laptop()<<endl;
+    cout<<laptopAndi.gettahun_pembuatan()<<endl;
+
     return 0;
+
+
 }
